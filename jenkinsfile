@@ -4,7 +4,7 @@ pipeline {
     environment {
         SERVER_IP      = '43.205.117.98'
         SSH_CREDENTIAL = 'web-key'
-        REPO_URL       = 'https://github.com/iamtruptimane/node-js-app-CICD.git'
+        REPO_URL       = 'https://github.com/pranitpotsure/node_app_cicd.git'
         BRANCH         = 'main'
         REMOTE_USER    = 'ubuntu'
         REMOTE_PATH    = '/home/ubuntu/node-app'
@@ -15,11 +15,6 @@ pipeline {
             steps {
                 git branch: "${BRANCH}", url: "${REPO_URL}"
             }
-
-
-
-
-            
         }
 
         stage('Upload Files to EC2') {
