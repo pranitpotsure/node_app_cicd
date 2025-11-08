@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        SERVER_IP      = '3.111.186.163'
+        SERVER_IP      = '43.205.118.182'
         SSH_CREDENTIAL = 'web-key'
         REPO_URL       = 'https://github.com/pranitpotsure/node_app_cicd.git'
         BRANCH         = 'main'
