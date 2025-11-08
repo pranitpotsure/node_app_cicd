@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Node App v<%= appInfo.version %></title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Welcome to Node App v<%= appInfo.version %></h1>
+    <p><%= appInfo.message %></p>
+    <p><small>Server time: <%= appInfo.time %></small></p>
+
+    <button onclick="refreshPage()">🔄 Refresh</button>
+  </div>
+
+  <script>
+    function refreshPage() {
+      location.reload();
+    }
+  </script>
+</body>
+</html>
